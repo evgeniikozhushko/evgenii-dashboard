@@ -17,4 +17,4 @@ const BackButton = ({ text, link }: BackButtonProps) => {
   );
 };
 
-export default BackButton;
+export default BackButton
