@@ -10,6 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import ThemeToggler from '@/components/ThemeToggler';
 
 
 const Navbar = () => {
@@ -18,9 +19,9 @@ const Navbar = () => {
       <Link href="/">
         <Image src={logo} alt='evgenii.ca' width ={40}/>
       </Link>
-      
-      
-      <DropdownMenu>
+      <div className="flex item-center">
+        <ThemeToggler />
+        <DropdownMenu>
         <DropdownMenuTrigger className='focus:outline-none'>
           <Avatar>
             <AvatarImage src="https://avatars.github.com/shadcn.png" alt="@shadcn" />
@@ -38,7 +39,7 @@ const Navbar = () => {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-
+      </div>
     </div>
   );
 }
